@@ -30,8 +30,8 @@ public class FeedingService {
         return feedingType;
     }
 
-    public Feeding save(Feeding p) throws UnfeasibleFeedingException {
-        return null;       
+    public void save(Feeding f) {
+       feedingRepository.save(f);       
     }
 
     
